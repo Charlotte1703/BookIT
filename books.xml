@@ -1,0 +1,92 @@
+<CATALOG>	
+	<BOOK>
+		<TITLE>C# 5.0 All-in-One For Dummies</TITLE>
+		<IMAGE>0001.jpg</IMAGE>
+		<AUTHOR>Bill Sempf, Chuck Sphar, Stephen R. Davis</AUTHOR>
+		<PUBLISHER>John Wiley and Sons INC</PUBLISHER>
+		<ISBN>9781118385364</ISBN>
+		<PRICE>£27.99</PRICE>
+		<ORDERCODE>0001</ORDERCODE>
+	</BOOK>
+	<BOOK>
+		<TITLE>C++ All-in-One For Dummies</TITLE>
+		<IMAGE>0010.jpg</IMAGE>
+		<AUTHOR>John Paul Mueller, Jeff Cogswell</AUTHOR>
+		<PUBLISHER>John Wiley and Sons INC</PUBLISHER>
+		<ISBN>9781118823781</ISBN>
+		<PRICE>£22.00</PRICE>
+		<ORDERCODE>0010</ORDERCODE>
+	</BOOK>
+	<BOOK>
+		<TITLE>Java For Dummies</TITLE>
+		<IMAGE>0011.jpg</IMAGE>
+		<AUTHOR>Barry Burd</AUTHOR>
+		<PUBLISHER>John Wiley and Sons INC</PUBLISHER>
+		<ISBN>9781118407806</ISBN>
+		<PRICE>£17.49</PRICE>
+		<ORDERCODE>0011</ORDERCODE>
+	</BOOK>
+	<BOOK>
+		<TITLE>SQL For Dummies</TITLE>
+		<IMAGE>0100.jpg</IMAGE>
+		<AUTHOR>Allen G. Taylor</AUTHOR>
+		<PUBLISHER> John Wiley and Sons INC</PUBLISHER>
+		<ISBN>9781118607961</ISBN>
+		<PRICE>£21.99</PRICE>
+		<ORDERCODE>0100</ORDERCODE>
+	</BOOK>
+	<BOOK>
+		<TITLE>Beginning Programming with Python for Dummies</TITLE>
+		<IMAGE>0101.jpg</IMAGE>
+		<AUTHOR>John Paul Mueller</AUTHOR>
+		<PUBLISHER>John Wiley and Sons INC</PUBLISHER>
+		<ISBN>9781118891452</ISBN>
+		<PRICE>£18.99</PRICE>
+		<ORDERCODE>0101</ORDERCODE>
+	</BOOK>
+	<BOOK>
+		<TITLE>Raspberry Pi Projects for Dummies</TITLE>
+		<IMAGE>0110.jpg</IMAGE>
+		<AUTHOR>Mike Cook, Brock Craft, et al</AUTHOR>
+		<PUBLISHER>John Wiley and Sons INC</PUBLISHER>
+		<ISBN>9781118766699</ISBN>
+		<PRICE>£17.99</PRICE>
+		<ORDERCODE>0110</ORDERCODE>
+	</BOOK>
+	<BOOK>
+		<TITLE>Beginning Programming for Dummies</TITLE>
+		<IMAGE>0111.jpg</IMAGE>
+		<AUTHOR>Wallace Wang</AUTHOR>
+		<PUBLISHER>John Wiley and Sons INC</PUBLISHER>
+		<ISBN>9780470088708</ISBN>
+		<PRICE>£16.99</PRICE>
+		<ORDERCODE>0111</ORDERCODE>
+	</BOOK>
+	<BOOK>
+		<TITLE>MATLAB for Dummies</TITLE>
+		<IMAGE>1000.jpg</IMAGE>
+		<AUTHOR>Jim Sizemore, John Paul Mueller</AUTHOR>
+		<PUBLISHER>John Wiley and Sons INC</PUBLISHER>
+		<ISBN>9781118820100</ISBN>
+		<PRICE>£21.99</PRICE>
+		<ORDERCODE>1000</ORDERCODE>
+	</BOOK>
+	<BOOK>
+		<TITLE>HTML5 for Dummies</TITLE>
+		<IMAGE>1001.jpg</IMAGE>
+		<AUTHOR>Andy Harris</AUTHOR>
+		<PUBLISHER>John Wiley and Sons INC</PUBLISHER>
+		<ISBN>9781118012529</ISBN>
+		<PRICE>£14.99</PRICE>
+		<ORDERCODE>1001</ORDERCODE>
+	</BOOK>
+	<BOOK>
+		<TITLE>Networking for Dummies</TITLE>
+		<IMAGE>1010.jpg</IMAGE>
+		<AUTHOR>Doug Lowe</AUTHOR>
+		<PUBLISHER>John Wiley and Sons INC</PUBLISHER>
+		<ISBN>9781119257769</ISBN>
+		<PRICE>£17.49</PRICE>
+		<ORDERCODE>1010</ORDERCODE>
+	</BOOK>
+</CATALOG>

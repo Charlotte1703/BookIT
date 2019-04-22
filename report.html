@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BookIT! - Report</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */.00
+    .row.content {height: 450px}
+    
+    /* Set blue background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #4286f4;
+      height: 100%;
+    }
+    
+    /* Set darker blue background color, white text and some padding */
+    footer {
+      background-color: #3179ed;
+      color: black;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+	.content{
+		background-color:#c8daf7;
+	}
+	.navbar-inverse{
+		background-color:#a0c4ff;
+	}
+	/*The following is to make the header taller so as to fit in my long logo*/
+	.header {
+		height: 110px;
+		text-align: center;
+	}
+  </style>
+</head>
+<body>
+
+<div class="container-fluid header">
+	<div class="header content">
+		<div class="col-sm-12 text-center">
+		<a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+		<h1>BookIT!</h1>
+		</div>
+	</div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	    <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="xmlpage.html">Catalog</a></li>
+        <li><a href="orderform.html">Order Form</a></li>
+        <li><a href="slideshow.html">Slide Show</a></li>
+		<li class="active"><a href="report.html">Report</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+	  <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+ 
+
+<div class="container-fluid text-center">
+  <div class="row content">
+
+    <div class="col-sm-10 text-left">
+      <h1>Report</h1>
+      <hr>
+	  <h3> Features of all pages:</h3>
+		  <dl>
+			<dt>Bootstraps</dt>
+				<dd>- Used to create the page layouts (from W3Schools)</dd>
+			<dt>Logo</dt>
+				<dd>- Displayed at top-left of each page, with the site name added as a separate header so it can be seen on smaller devices (this did not work with a banner logo) </dd>
+				<dd>- Links back to the homepage from all pages (there is still also a separate button for this)</dd>
+			<dt>Menu Buttons</dt>
+				<dd>- Consistently placed across all pages</dd>
+				<dd>- Colour changes to show which page is “active” (which page is currently being viewed)</dd>
+				<dd>- On smaller devices the buttons are hidden behind a menu button which will provide the user with a drop-down menu from which they will then be able to select the page that they would like to view next (the “active” feature still works here)</dd>
+			<dt>Ad Column </dt>
+				<dd>- Located on the left-hand side of each page, but at the bottom of each page on smaller devices</dd>
+				<dd>- Two books are “featured” on each page, each linking to the catalog page where the user is able to see the entire selection available</dd>
+			<dt>Footer</dt>
+				<dd>- Contains my name, N number, and email address</dd>
+			<dt>CSS</dt>
+				<dd>- The CSS for each page is located within the HTML code because of how the bootstraps are laid out – I did attempt to add them in separately and would have found this easier, but the bootstraps already contained a link for a stylesheet and it was not clear as to how a second style sheet could be added at this point.</dd>
+			<br>
+			<h3>Homepage</h3>
+				<dd>- Contains a brief description of what the website is and does and also includes two hyperlinks (one to the catalog page, and one to the order form page) so that the user can take a look at them.</dd>
+			<br>
+			<h3>Catalog Page (XML)</h3>
+				<dd>- This page contains a table which contains book data obtained from a separate XML page. </dd>
+				<dd>- The information displayed in the table for 10 IT-related books includes; title, image, author, publisher, ISBN, price, and also order code. All information except from the order codes was found on the Waterstones website.</dd>
+				<dd>- Images are stored in an “images” folder where they can easily be located and identified</dd>
+				<dd>- Table is dynamic and resizes with the browser window</dd>
+				<dd>- All of the book data has been used from the Waterstones website</dd>
+			<br>
+			<h3>Order Form</h3>
+				<dd>- Small description of how to use the page with headers to split the form up into the 3 parts.</dd>
+				<dd>- The form contains: drop-down menus containing the order codes, number fields with limited input (1-10), text fields, text fields with patterns to restrict input and keep it sensible, and date field limiting the minimum date to 1st January 2017</dd>
+				<dd>- “Place order” button – when the form is properly filled in, this button will allow the user to access the “submit” page</dd>
+			<br>
+			<h3>Submit </h3>
+				<dd>- No menu button for this page because it should not be accessible without filling in the order form correctly. </dd>
+				<dd>- Provides message for the user to thank them for their order and tell them that they will receive further information regarding estimated delivery dates. </dd>
+				<dd>- User also given a “unique order number” which is just a randomly-generated 10-digit number.</dd>
+			<br>
+			<h3>Slideshow</h3>
+				<dd>- Used HTML, CSS, JavaScript</dd>
+				<dd>- For this I created 4 banners to feature some of the books for sale on the site with some words of encouragement such as “learn a new skill…”</dd>
+				<dd>- Slideshow is dynamic to fit all devices and browser sizes</dd>
+				<dd>- Slides are on a timer and will keep on looping. Current slide number can be seen in top left corner, and also in the form of dots just below the slidesh</dd>
+
+		  
+	  
+	  </dl>
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p>ADS</p>
+		<a href="xmlpage.html"><img src="images/0001med.jpg"></a>
+      </div>
+      <div class="well">
+	  <p>ADS</p>
+	  <a href="xmlpage.html"><img src="images/0010med.jpg"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Charlotte Spencer, N0640005, charlotte.spencer2015@ntu.ac.uk</p>
+</footer>
+
+</body>
+</html>

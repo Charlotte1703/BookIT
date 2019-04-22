@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BookIT! - Order Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */.00
+    .row.content {height: 450px}
+    
+    /* Set blue background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #4286f4;
+      height: 100%;
+    }
+    
+    /* Set darker blue background color, white text and some padding */
+    footer {
+      background-color: #3179ed;
+      color: black;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+	.content{
+		background-color:#c8daf7;
+	}
+	.navbar-inverse{
+		background-color:#a0c4ff;
+	}
+	
+	/*The following is to make the header taller so as to fit in my long logo*/
+	.header {
+		height: 110px;
+		text-align: center;
+	}
+
+  </style>
+</head>
+<body>
+
+<div class="container-fluid header">
+	<div class="header content">
+		<div class="col-sm-10text-center">
+		<a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+		<h1>BookIT!</h1>
+		</div>
+	</div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	    <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="xmlpage.html">Catalog</a></li>
+        <li class="active"><a href="orderform.html">Order Form</a></li>
+        <li><a href="slideshow.html">Slide Show</a></li>
+		<li><a href="report.html">Report</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+	  <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+ 
+
+<div class="container-fluid text-center">
+  <div class="row content">
+
+    <div class="col-sm-10 text-left">
+	
+      <h1>Order Form</h1>
+		<p>Enter your details here, along with the order number of the book(s) that you wish to purchase. Shipping costs £3 for one book, with an extra £1 for each book on top of that.</p>
+		<hr>
+	
+	<form action="submit.html">
+	<div>
+		<h2> Order Details </h2>
+		<p>Please select the order number from the drop-down list and enter the required quantity. You may purchase a maximum of 10 copies of each book at a time.</p>
+		Choice 1: <select name="choice1">
+			<option value="0000"> </option>
+			<option value="0001">0001</option>
+			<option value="0010">0010</option>
+			<option value="0011">0011</option>
+			<option value="0100">0100</option>
+			<option value="0101">0101</option>
+			<option value="0110">0110</option>
+			<option value="0111">0111</option>
+			<option value="1000">1000</option>
+			<option value="1001">1001</option>
+			<option value="1010">1010</option>
+		</select>
+		<input name="quantity" type="number" min="1" max="10" required/>
+		<br>
+		Choice 2: <select name="choice2">
+			<option value="0000"> </option>
+			<option value="0001">0001</option>
+			<option value="0010">0010</option>
+			<option value="0011">0011</option>
+			<option value="0100">0100</option>
+			<option value="0101">0101</option>
+			<option value="0110">0110</option>
+			<option value="0111">0111</option>
+			<option value="1000">1000</option>
+			<option value="1001">1001</option>
+			<option value="1010">1010</option>
+		</select>
+		<input name="quantity" type="number" min="1" max="10"/>
+		<br>
+		Choice 3: <select name="choice3">
+			<option value="0000"> </option>
+			<option value="0001">0001</option>
+			<option value="0010">0010</option>
+			<option value="0011">0011</option>
+			<option value="0100">0100</option>
+			<option value="0101">0101</option>
+			<option value="0110">0110</option>
+			<option value="0111">0111</option>
+			<option value="1000">1000</option>
+			<option value="1001">1001</option>
+			<option value="1010">1010</option>
+		</select>
+		<input name="quantity" type="number" min="1" max="10"/>
+		<br>
+		Choice 4: <select name="choice4">
+			<option value="0000"> </option>
+			<option value="0001">0001</option>
+			<option value="0010">0010</option>
+			<option value="0011">0011</option>
+			<option value="0100">0100</option>
+			<option value="0101">0101</option>
+			<option value="0110">0110</option>
+			<option value="0111">0111</option>
+			<option value="1000">1000</option>
+			<option value="1001">1001</option>
+			<option value="1010">1010</option>
+		</select>
+		<input name="quantity" type="number" min="1" max="10"/>
+		<br>
+		Choice 5: <select name="choice5">
+			<option value="0000"> </option>
+			<option value="0001">0001</option>
+			<option value="0010">0010</option>
+			<option value="0011">0011</option>
+			<option value="0100">0100</option>
+			<option value="0101">0101</option>
+			<option value="0110">0110</option>
+			<option value="0111">0111</option>
+			<option value="1000">1000</option>
+			<option value="1001">1001</option>
+			<option value="1010">1010</option>
+		</select>
+		<input name="quantity" type="number" min="1" max="10"/>
+		<br>
+		Choice 6: <select name="choice6">
+			<option value="0000"> </option>
+			<option value="0001">0001</option>
+			<option value="0010">0010</option>
+			<option value="0011">0011</option>
+			<option value="0100">0100</option>
+			<option value="0101">0101</option>
+			<option value="0110">0110</option>
+			<option value="0111">0111</option>
+			<option value="1000">1000</option>
+			<option value="1001">1001</option>
+			<option value="1010">1010</option>
+		</select>
+		<input name="quantity" type="number" min="1" max="10"/>
+		<br>
+		Choice 7: <select name="choice7">
+			<option value="0000"> </option>
+			<option value="0001">0001</option>
+			<option value="0010">0010</option>
+			<option value="0011">0011</option>
+			<option value="0100">0100</option>
+			<option value="0101">0101</option>
+			<option value="0110">0110</option>
+			<option value="0111">0111</option>
+			<option value="1000">1000</option>
+			<option value="1001">1001</option>
+			<option value="1010">1010</option>
+		</select>
+		<input name="quantity" type="number" min="1" max="10"/>
+		<br>
+		Choice 8: <select name="choice8">
+			<option value="0000"> </option>
+			<option value="0001">0001</option>
+			<option value="0010">0010</option>
+			<option value="0011">0011</option>
+			<option value="0100">0100</option>
+			<option value="0101">0101</option>
+			<option value="0110">0110</option>
+			<option value="0111">0111</option>
+			<option value="1000">1000</option>
+			<option value="1001">1001</option>
+			<option value="1010">1010</option>
+		</select>
+		<input name="quantity" type="number" min="1" max="10"/>
+		<br>
+		Choice 9: <select name="choice9">
+			<option value="0000"> </option>
+			<option value="0001">0001</option>
+			<option value="0010">0010</option>
+			<option value="0011">0011</option>
+			<option value="0100">0100</option>
+			<option value="0101">0101</option>
+			<option value="0110">0110</option>
+			<option value="0111">0111</option>
+			<option value="1000">1000</option>
+			<option value="1001">1001</option>
+			<option value="1010">1010</option>
+		</select>
+		<input name="quantity" type="number" min="1" max="10"/>
+		<br>
+		Choice 10: <select name="choice10">
+			<option value="0000"> </option>
+			<option value="0001">0001</option>
+			<option value="0010">0010</option>
+			<option value="0011">0011</option>
+			<option value="0100">0100</option>
+			<option value="0101">0101</option>
+			<option value="0110">0110</option>
+			<option value="0111">0111</option>
+			<option value="1000">1000</option>
+			<option value="1001">1001</option>
+			<option value="1010">1010</option>
+		</select>
+		<input name="quantity" type="number" min="1" max="10"/>
+	</div>
+	<hr>
+	<div>		
+		<h2>Shipping Details</h2>
+		<p>Please enter your shipping address details below.</p>
+		First Name: <input type="text" name="firstname" required/>
+		<br><br>
+		Surname: <input type="text" name="surname" required/>
+		<br><br>
+		Address Line 1: <input type="text" name="add1" required/>
+		<br><br>
+		Address Line 2: <input type="text" name="add2"/>
+		<br><br>
+		City: <input type="text" name="city" required/>
+		<br><br>
+		Postcode: <input pattern ="[A-Za-z]{1,2}[0-9Rr][0-9A-Za-z]? [0-9][ABD-HJLNP-UW-Zabd-hjlnp-uw-z]{2}" name="postcode" type="text" title="Please enter a valid UK postcode." required/>
+		<br><br>
+		Phone: <input pattern="[0-9]{11}" name="phone" type="text" title="Please enter an 11 digit mobile/phone number." required/>
+	</div>
+	<hr>
+	<div>
+		<h2>Billing Details</h2>
+		<p>Please provide your billing address and card details below.</p>
+		First Name: <input type="text" name="firstname" required/>
+		<br><br>
+		Surname: <input type="text" name="surname" required/>
+		<br><br>
+		Address Line 1: <input type="text" name="add1" required/>
+		<br><br>
+		Address Line 2: <input type="text" name="add2"/>
+		<br><br>
+		City: <input type="text" name="city" required/>
+		<br><br>
+		Postcode: <input pattern ="[A-Za-z]{1,2}[0-9Rr][0-9A-Za-z]? [0-9][ABD-HJLNP-UW-Zabd-hjlnp-uw-z]{2}" name="postcode" type="text" title="Please enter a valid UK postcode." required/>
+		<br><br>
+		Debit Card No: <input pattern="[0-9]{16}" name="cardno" type="text" title="Please provide your 16 digit card number." required/>
+		<br><br>
+		Expiry Date: <input type="date" name="cardexpire" title="Please enter card expiry date - must be after 01-01-2017." min="2017-01-01"required/>
+		<br><br>
+		Card Security: <input pattern="[0-9]{3}" name="security" type="text" title="3 digit number found on back of debit card." required/>
+		<br><br>
+		<input type="submit" value="Place Order">
+		
+		
+		<br><br><br>
+		<h2>
+		
+	
+	</form>
+	  
+	  
+
+
+  </div>
+  	      </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p>ADS</p>
+		<a href="xmlpage.html"><img src="images/0101med.jpg"></a>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+		<a href="xmlpage.html"><img src="images/0110med.jpg"></a>
+      </div>
+    </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Charlotte Spencer, N0640005, charlotte.spencer2015@ntu.ac.uk</p>
+</footer>
+
+</body>
+</html>
